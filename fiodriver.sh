@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-DEVICES=( sdb )
+DEVICES=( md0 )
 THREADS=1
 IODEPTH=( 1 4 16 32 64 )
 FIO_SCRIPTS='scripts'
+
+sudo umount /mnt/fmap
 
 function usage() {
         echo
